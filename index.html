@@ -15,14 +15,27 @@
         <!-- Styles and Scripts -->
         <link href="/assets/global/css/stylesheet.css" type="text/css" rel="stylesheet">
         <link href="/assets/index/css/stylesheet.css" type="text/css" rel="stylesheet">
+
+        <script defer src="/assets/global/swup/swup.js"></script>
     </head>
-    <body>
-        <main>
+    <body data-nav="false">
+        <nav>
+
+        </nav>
+        <main id="swup">
+            <div id="splash-bg"></div>
             <video playsinline autoplay muted loop id="splash">
                 <source src="/assets/imports/splash.webm" type="video/webm">
             </video>
 
             <div id="splash-wipe"></div>
+
+            <!-- Main Content -->
+            <img id="heroImg" src="assets/imports/logo.png">
+            <h1 id="heroMotto">Paint your home a <span class="highlight" id="hm-green">new shade of green.</span></h1>
+
         </main>
+
     </body>
+
 </html>
