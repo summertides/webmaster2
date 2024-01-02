@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Nunito', Arial;
+
+    background-color: #F3F9FB;
+}
+
+section {
+    position: relative;
+
+    height: 100vh;
+
+}
+
+#hero-wrapper {
+    position: absolute;
+    left: 50%; top: 14vh;
+    transform: translate(-50%, 0);
+
+    width: 98vw; height: 84vh;
+    background-color: #87C0CD;
+
+    border-radius: 2vh;
+}
