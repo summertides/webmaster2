@@ -2920,10 +2920,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var scroll = new _locomotiveScroll.default({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
-  lerp: 0.04,
+  lerp: 0.07,
   multiplier: 1.5
 });
-},{"locomotive-scroll":"node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js"}],"C:/Users/David/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"locomotive-scroll":"node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js"}],"../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2948,7 +2948,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51389" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55835" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -3092,5 +3092,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["C:/Users/David/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/locomotive.js"], null)
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/locomotive.js"], null)
 //# sourceMappingURL=/locomotive.7328d64a.js.map
