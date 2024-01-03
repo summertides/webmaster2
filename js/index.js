@@ -1,8 +1,10 @@
-import LocomotiveScroll from 'locomotive-scroll';
+document.addEventListener('mousemove', (event) => {
+    const blob = document.getElementById('blob');
+    const x = event.clientX - blob.clientWidth / 2;
+    const y = event.clientY - blob.clientHeight / 2;
 
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    lerp: 0.04,
-    multiplier: 1.5
+    blob.animate({
+        left: x + 'px',
+        top: y + 'px'
+    }, { duration: 3000, fill: "forwards" });
 });

@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-family: 'Nunito', Arial;
 
-    background-color: #F3F9FB;
+    background-color: #26282B;
 }
 
 section {
@@ -23,7 +23,52 @@ section {
     transform: translate(-50%, 0);
 
     width: 98vw; height: 84vh;
-    background-color: #87C0CD;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(200px);
 
     border-radius: 2vh;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-width: 0.15vw;
+}
+
+#blob {
+    position: fixed;
+
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%, #f3afff 100%);
+
+    filter: blur(5px);
+
+    height: 500px;
+    aspect-ratio: 1;
+
+    border-radius: 50%;
+
+    animation: blobrotate 35s ease infinite;
+
+    z-index: -5;
+}
+
+#blur {
+    position: fixed;
+
+    width: 100%; height: 100%;
+    backdrop-filter: blur(120px);
+    
+    z-index: -4;
+}
+
+@keyframes blobrotate {
+    from {
+        rotate: 0deg;
+    }
+
+    50% {
+        scale: 1 1.25;
+    }
+
+    to {
+        rotate: 360deg;
+    }
 }
