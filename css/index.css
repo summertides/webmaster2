@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-family: 'Nunito', Arial;
 
-    background-color: #000;
+    background-color: #090c10;
 }
 
 section {
@@ -19,17 +19,27 @@ section {
 
 #hero-wrapper {
     position: absolute;
-    left: 50%; top: 14vh;
+    left: 50%; bottom: 2vh;
     transform: translate(-50%, 0);
 
     width: 98vw; height: 84vh;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.025);
     backdrop-filter: blur(200px);
 
     border-radius: 2vh;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.05);
     border-width: 0.15vw;
+
+    pointer-events: none;
+}
+
+canvas {
+    display: block;
+}
+
+#canvas3d {
+    z-index: 100;
 }
 
 #logo {
