@@ -2923,6 +2923,15 @@ var scroll = new _locomotiveScroll.default({
   lerp: 0.07,
   multiplier: 1.5
 });
+scroll.on('scroll', function (obj) {
+  var newWidth = 102 - 0.02 * obj.scroll.y; // 102vw to 98vw
+  var newHeight = 100 - 0.01 * obj.scroll.y; // 100vh to 95vh
+
+  newWidth = Math.max(newWidth, 98);
+  newHeight = Math.max(newHeight, 95);
+  document.getElementById('hero-wrapper').style.width = newWidth + 'vw';
+  document.getElementById('hero-wrapper').style.height = newHeight + 'vh';
+});
 },{"locomotive-scroll":"node_modules/locomotive-scroll/dist/locomotive-scroll.esm.js"}],"C:/Users/David/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -2948,7 +2957,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53518" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54977" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
