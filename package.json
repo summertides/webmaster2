@@ -2,5 +2,11 @@
   "dependencies": {
     "@splinetool/runtime": "^1.0.17",
     "locomotive-scroll": "^4.1.4"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "scripts": {
+    "build": "parcel build index.html"
   }
 }
