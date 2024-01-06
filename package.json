@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@splinetool/runtime": "^1.0.17",
+    "@splinetool/runtime": "^1.0.18",
     "locomotive-scroll": "^4.1.4"
   },
   "devDependencies": {
