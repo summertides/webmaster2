@@ -10,8 +10,6 @@
         <!-- Styles and Scripts -->
         <link rel="stylesheet" href="css/locomotivescroll.css">
         <link rel="stylesheet" href="css/index.css">
-
-        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
     </head>
 
 
@@ -70,7 +68,8 @@
         <main data-scroll-container>
             <section>
                 <div id="hero-wrapper">
-                    <canvas id="canvas3d"></canvas>
+                    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.18/build/spline-viewer.js"></script>
+                    <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/rRKMbzr1HiXTgr8N/scene.splinecode"></spline-viewer>
 
                     <h1 id="hero-title">Clean Future <span>Switch Now.</span></h1>
 
