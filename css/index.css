@@ -19,7 +19,7 @@ body {
     margin: 0;
     font-family: 'Nunito', Arial;
 
-    background-color: #040404;
+    background-color: #ffffff;
 }
 
 section {
@@ -32,16 +32,12 @@ section {
 /* Global Settings */
 #logo {
     position: fixed;
-    left: -23vw; top: -47.5vh;
+    left: 3vw; top: 3vh;
 
-    transform: scale(0.05);
     z-index: 100;
 
     transition: 0.5s ease;
-}
-
-#logo:hover {
-    transform: scale(0.06);
+    mix-blend-mode: difference;
 }
 
 .menu-toggle{
@@ -52,7 +48,9 @@ section {
     width:40px;
     height:40px;
     cursor:pointer;
-    z-index: 100;
+    z-index: 101;
+
+    mix-blend-mode: difference;
   }
   .hamburger,.cross{
     position:absolute;
@@ -124,8 +122,8 @@ section {
 nav {
     position: fixed;
     width: 98vw; height: 60vh;
-    left: 50%; bottom: 2vh;
-    transform: translate(-50%, 0) scale(0.95);
+    left: 50%; top: -80vh;
+    transform: translate(-50%, 0);
 
     display: flex;
     align-items: flex-start;
@@ -138,10 +136,18 @@ nav {
     border-radius: 2vh;
     z-index: 100;
 
-    opacity: 0;
+    opacity: 1;
     pointer-events: none;
 
-    transition: 0.5s ease;
+    transition: 1.4s ease;
+}
+
+body[data-nav="true"] nav {
+  top: -2vh;
+  transform: translate(-50%, 0) scale(1);
+
+  opacity: 1;
+  pointer-events: auto                                   ;
 }
 
 #navbg {
@@ -155,14 +161,6 @@ nav {
 
     pointer-events: none;
     transition: 0.5s ease;
-}
-
-body[data-nav="true"] nav {
-    bottom: 2vh;
-    transform: translate(-50%, 0) scale(1);
-
-    opacity: 1;
-    pointer-events: auto                                   ;
 }
 
 body[data-nav="true"] #navbg {
@@ -195,11 +193,11 @@ body[data-nav="true"] #navbg {
     margin: auto;
 
     width: 102vw; height: 100vh;
-    background-color: rgba(255, 255, 255, 0.005);
+    background-color: rgb(7, 7, 7);
 
     border-radius: 2vh;
     border-style: solid;
-    border-color: rgba(255, 255, 255, 0.025);
+    border-color: rgb(26, 26, 26);
     border-width: 0.15vw;
 
     pointer-events: none;
