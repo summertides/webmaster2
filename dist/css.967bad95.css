@@ -30,6 +30,14 @@ section {
 
 }
 
+footer {
+    position: relative;
+    
+    background-color: black;
+
+    height: 75vh;
+}
+
 /* Global Settings */
 #logo {
     position: fixed;
@@ -149,8 +157,6 @@ body[data-nav="true"] .menu-toggle {
     z-index: 101;
 
     overflow: hidden;
-
-    transition: 1s ease;
 }
 
 #n1 {
@@ -162,6 +168,7 @@ body[data-nav="true"] .menu-toggle {
     opacity: 0;
 
     transition-delay: 0s;
+    transition: 0.85s ease;
 }
 
 #n2 {
@@ -173,6 +180,7 @@ body[data-nav="true"] .menu-toggle {
     opacity: 0;
 
     transition-delay: 0s;
+    transition: 0.85s ease;
 }
 
 #n3 {
@@ -182,7 +190,8 @@ body[data-nav="true"] .menu-toggle {
     width: 20vw; height: 26vh;
 
     opacity: 0;
-    transition-delay: 0.05s;
+    transition-delay: 0.0s;
+    transition: 0.95s ease;
 }
 
 #n4 {
@@ -192,7 +201,8 @@ body[data-nav="true"] .menu-toggle {
     width: 21.5vw; height: 26vh;
 
     opacity: 0;
-    transition-delay: 0.05s;
+    transition-delay: 0.0s;
+    transition: 0.95s ease;
 }
 
 body[data-nav="true"] #n1 {
@@ -248,13 +258,24 @@ body[data-nav="true"] #navbg {
     left: -12vh; top: -25vh;
     transform: rotate(-10deg);
 
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.1);
 
     font-family: 'Rubik Mono One', monospace;
     font-size: 35vh;
     letter-spacing: -1.25vw;
 }
 
+#n2-ctatxt {
+    position: absolute;
+    left: 3vw; top: -1vh;
+    vertical-align: middle;
+
+    color: black;
+    font-family: 'DM Serif Display', serif;
+    font-size: 8vh;
+    font-style: italic;
+    line-height: 11vh;
+}
 
 /* Landing Page */
 #hero-wrapper {
